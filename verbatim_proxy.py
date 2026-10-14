@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """verbatim-proxy: an OpenAI-compatible proxy that keeps file names and paths verbatim.
 
-Coding agents running a local model in a language other than English (Spanish, in our tests) sometimes write a different file name from the one the
+When a coding agent works in a language other than English (Spanish, in our tests), the model sometimes picks a different file name from the one the
 user asked for: `procesos.csv` becomes `processes.csv`, `usuarios.txt` becomes `users.txt`. The model is not translating (names unrelated to the system,
 like `tortuga.txt`, are always kept); it "normalizes" words it recognizes as system concepts to the English names such files usually have.
 

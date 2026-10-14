@@ -7,7 +7,8 @@ model server (e.g. vLLM). In the **user** messages it wraps file names and paths
 
 ## The problem
 
-Running a local model as a Linux sysadmin agent **in Spanish**, we saw the agent write a different file name from the one we asked for:
+Running a local model as a Linux sysadmin agent **in Spanish**, we saw the model pick a different file name from the one we asked for (the client
+only executes the tool call; the name is the model's choice):
 
 | Asked for | Written |
 |---|---|
